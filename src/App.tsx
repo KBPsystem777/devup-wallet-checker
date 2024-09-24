@@ -31,7 +31,6 @@ function App() {
           const chainId = await window.ethereum.request({
             method: "eth_chainId",
           })
-          console.log("netwrk: ", chainId)
           setCurrentNetwork(chainId)
         } catch (error) {
           console.error("Error: ", error)
@@ -62,6 +61,7 @@ function App() {
           method: "wallet_switchEthereumChain",
           params: [{ chainId: "0xAA36A7" }], // Sepolia chain ID in hex (0xAA36A7 = 11155111 in decimal)
         })
+        window.location.reload()
       } catch (error: any) {
         // This error code means the chain has not been added to MetaMask
         if (error.code === 4902) {
