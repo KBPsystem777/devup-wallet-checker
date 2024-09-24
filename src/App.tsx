@@ -95,6 +95,7 @@ function App() {
   return (
     <>
       <h1>DevUp! - Router Protocol</h1>
+      <w3m-button />
       <div className="devUpContainer">
         {isMetaMaskInstalled ? (
           <div className="checkSteps">
