@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import "./App.css"
 
 import routerLogo from "./assets/router.svg"
-import devUpLogo from "./assets/devup.png"
+import devUpLogo from "./assets/devUp!-W2.png"
 
 const SEPOLIA_CHAINID = "0xaa36a7"
 
@@ -110,7 +110,10 @@ function App() {
         ) : (
           <p className="appWarning">
             ⚠️ Please install{" "}
-            <a href="https://metamask.io/download/">Metamask</a> to continue
+            <a href="https://metamask.io/download/" target="_blank">
+              Metamask
+            </a>{" "}
+            to continue
           </p>
         )}
       </div>
