@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 
 import "./App.css"
 
-import routerLogo from "./assets/router.svg"
 import devUpLogo from "./assets/devUp!-W2.png"
 
 const SEPOLIA_CHAINID = "0xaa36a7"
