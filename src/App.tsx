@@ -94,7 +94,11 @@ function App() {
 
   return (
     <>
-      <h1>DevUp! - Router Protocol</h1>
+      <div>
+        <a href="https://www.devup.academy">
+          <img src={devUpLogo} className="logo" alt="DevUp! logo" />
+        </a>
+      </div>
       <div className="devUpContainer">
         {isMetaMaskInstalled ? (
           <div className="checkSteps">
@@ -117,19 +121,6 @@ function App() {
           </p>
         )}
       </div>
-
-      <footer>
-        <a href="https://www.devup.academy">
-          <img src={devUpLogo} className="logo" alt="DevUp! logo"></img>
-        </a>
-        <a href="https://www.routerprotocol.com">
-          <img
-            src={routerLogo}
-            className="logo"
-            alt="Router Protocol logo"
-          ></img>
-        </a>
-      </footer>
     </>
   )
 }
