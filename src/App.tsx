@@ -89,6 +89,11 @@ function App() {
     }
   }
 
+  const handleRemixRedirection = () => {
+    // Redirect to Remix IDE URL
+    window.open("https://remix.ethereum.org", "_blank")
+  }
+
   return (
     <>
       <div>
@@ -105,7 +110,15 @@ function App() {
             {!isSepolia ? (
               <button onClick={switchToSepolia}>Switch to Sepolia</button>
             ) : (
-              <p className="mmInstalled">✅ Active network is Sepolia</p>
+              <div>
+                <p className="mmInstalled">✅ Active network is Sepolia</p>
+
+                <div>
+                  <button type="button" onClick={handleRemixRedirection}>
+                    Go to Remix IDE
+                  </button>
+                </div>
+              </div>
             )}
           </div>
         ) : (
