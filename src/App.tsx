@@ -2,8 +2,6 @@ import { useEffect, useState } from "react"
 
 import "./App.css"
 
-import devUpLogo from "./assets/devUp!-W2.png"
-
 const SEPOLIA_CHAINID = "0xaa36a7"
 
 function App() {
@@ -94,8 +92,8 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://www.devup.academy">
-          <img src={devUpLogo} className="logo" alt="DevUp! logo" />
+        <a href="https://bitskwela.com">
+          <h1 className="bitDevHeader">BitDev</h1>
         </a>
       </div>
       <div className="devUpContainer">

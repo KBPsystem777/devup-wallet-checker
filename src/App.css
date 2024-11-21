@@ -5,18 +5,10 @@
   text-align: center;
 }
 
-.logo {
-  height: 2em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.bitDevHeader {
+  color: #ffbf34;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -25,18 +17,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-footer {
-  padding-top: 10em;
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 
@@ -54,5 +34,9 @@ footer {
 }
 
 .devUpContainer {
-  padding-top: 1em;
+  padding-top: .5em;
+}
+
+a {
+  text-decoration: none;
 }
