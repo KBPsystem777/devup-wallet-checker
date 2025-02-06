@@ -42,9 +42,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://bitskwela.com">
-          <h1 className="bitDevHeader">BitDev</h1>
-        </a>
+        <h1 className="bitDevHeader">BitDev</h1>
       </div>
       <div className="devUpContainer">
         {isMetaMaskInstalled ? (
@@ -67,7 +65,7 @@ function App() {
                 type="button"
                 onClick={handleRemixRedirection}
               >
-                Go to Remix IDE
+                Go to Remix IDE 💻
               </button>
             </div>
           </div>
