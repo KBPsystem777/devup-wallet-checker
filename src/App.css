@@ -2,13 +2,15 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .bitDevHeader {
   color: #ffbf34;
 }
 
+.sonic-btn + .remix-btn {
+  margin-left: 1rem; /* Adjust the value as needed */
+}
 
 @keyframes logo-spin {
   from {
@@ -18,7 +20,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 .checkSteps {
   text-align: left;
@@ -34,7 +35,7 @@
 }
 
 .devUpContainer {
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 a {

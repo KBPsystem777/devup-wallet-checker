@@ -42,16 +42,21 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #BF40BF;
+  background-color: #ac852f;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ffffff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.remix-btn {
+  margin-top: 2em;
+  background-color: #474973;
 }
 
 @media (prefers-color-scheme: light) {
