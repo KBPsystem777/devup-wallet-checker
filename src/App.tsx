@@ -1,43 +1,48 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
-import "./App.css"
+import "./App.css";
 
 function App() {
-  const [hasMetamask, setHasMetamask] = useState(false)
-  const [isMetaMaskInstalled, setIsMetaMaskInstalled] = useState(false)
+  const [hasMetamask, setHasMetamask] = useState(false);
+  const [isMetaMaskInstalled, setIsMetaMaskInstalled] = useState(false);
 
   useEffect(() => {
     const checkMetamask = async () => {
       if (typeof window.ethereum !== "undefined") {
-        setHasMetamask(true)
-        setIsMetaMaskInstalled(true)
+        setHasMetamask(true);
+        setIsMetaMaskInstalled(true);
       } else {
-        setHasMetamask(false)
+        setHasMetamask(false);
       }
-    }
+    };
 
     // Initial check
-    checkMetamask()
+    checkMetamask();
 
-    const pollInterval = setInterval(checkMetamask, 1000)
-    console.log(typeof window.ethereum)
+    const pollInterval = setInterval(checkMetamask, 1000);
+    console.log(typeof window.ethereum);
 
-    return () => clearInterval(pollInterval)
-  }, [])
+    return () => clearInterval(pollInterval);
+  }, []);
 
-  console.log("MM: ", hasMetamask, isMetaMaskInstalled)
+  console.log("MM: ", hasMetamask, isMetaMaskInstalled);
 
   const handleRemixRedirection = () => {
     // Redirect to Remix IDE URL
-    window.open("https://remix.ethereum.org", "_blank")
-  }
+    window.open("https://remix.ethereum.org", "_blank");
+  };
 
   const handleSonicTestnetRedirection = () => {
     // Redirect to Sonic testnet URL
-    window.open("https://testnet.soniclabs.com", "_blank")
-  }
+    window.open("https://testnet.soniclabs.com", "_blank");
+  };
+
+  const handleCodeFilesRedirection = () => {
+    // Redirect to Sonic testnet URL
+    window.open("https://bit.ly/bitdev-codes", "_blank");
+  };
 
   return (
     <>
@@ -51,23 +56,28 @@ function App() {
               ✅ Metamask is currently installed on this browser
             </p>
 
-            <div>
-              <button
-                className="sonic-btn"
-                type="button"
-                onClick={handleSonicTestnetRedirection}
-              >
-                Sonic TestNet
-              </button>
+            <button
+              className="sonic-testnet-button"
+              type="button"
+              onClick={handleSonicTestnetRedirection}
+            >
+              Sonic Testnet
+            </button>
 
-              <button
-                className="remix-btn"
-                type="button"
-                onClick={handleRemixRedirection}
-              >
-                Go to Remix IDE 💻
-              </button>
-            </div>
+            <button
+              className="code-btn"
+              type="button"
+              onClick={handleCodeFilesRedirection}
+            >
+              Starter code
+            </button>
+            <button
+              className="remix-btn"
+              type="button"
+              onClick={handleRemixRedirection}
+            >
+              Go to Remix IDE 💻
+            </button>
           </div>
         ) : (
           <p className="appWarning">
@@ -81,7 +91,7 @@ function App() {
       </div>
       <Analytics />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

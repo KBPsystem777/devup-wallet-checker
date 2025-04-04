@@ -8,14 +8,12 @@
   color: #ffbf34;
 }
 
-.sonic-btn + .remix-btn {
-  margin-left: 1rem; /* Adjust the value as needed */
-}
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,4 +38,9 @@
 
 a {
   text-decoration: none;
+}
+
+.sonic-testnet-button {
+  background: linear-gradient(to right, orange, black);
+  color: white;
 }
